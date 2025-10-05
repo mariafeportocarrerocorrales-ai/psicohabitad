@@ -41,6 +41,47 @@ npm run dev
 - `npm run dev` - Inicia el servidor de desarrollo
 - `npm run build` - Construye el proyecto para producción
 - `npm run preview` - Vista previa de la construcción de producción
+- `npm run vercel-build` - Comando específico para Vercel
+
+## Despliegue en Vercel
+
+### Método 1: GitHub + Vercel (Recomendado)
+
+1. Sube tu código a GitHub
+2. Ve a [vercel.com](https://vercel.com) y conecta tu cuenta de GitHub
+3. Importa tu repositorio
+4. Vercel detectará automáticamente la configuración de Vite
+5. El despliegue se realizará automáticamente
+
+### Método 2: CLI de Vercel
+
+1. Instala la CLI de Vercel:
+```bash
+npm install -g vercel
+```
+
+2. Inicia sesión en Vercel:
+```bash
+vercel login
+```
+
+3. Despliega el proyecto:
+```bash
+vercel
+```
+
+### Configuración incluida
+
+- ✅ `vercel.json` - Configuración de Vercel
+- ✅ Modelos copiados automáticamente al build
+- ✅ Base path configurado para Vercel
+- ✅ Scripts de build optimizados
+
+### Notas importantes para Vercel
+
+- El proyecto está configurado para usar HTTPS (requerido para acceso a cámara)
+- Los archivos del modelo se copian automáticamente durante el build
+- La aplicación funciona correctamente en el dominio de Vercel
 
 ## Estructura del proyecto
 
